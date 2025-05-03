@@ -1,0 +1,16 @@
+2025-04-30 20:55:52,676 - PT4Rec - INFO - ### model configuration ###
+2025-04-30 20:55:52,676 - PT4Rec - INFO - training.set=./dataset/ml-1M/train_cold.txt
+2025-04-30 20:55:52,676 - PT4Rec - INFO - test.set=./dataset/ml-1M/test_cold.txt
+2025-04-30 20:55:52,676 - PT4Rec - INFO - model.name=PT4Rec
+2025-04-30 20:55:52,676 - PT4Rec - INFO - model.type=graph
+2025-04-30 20:55:52,676 - PT4Rec - INFO - item.ranking=-topN 5,20
+2025-04-30 20:55:52,676 - PT4Rec - INFO - embedding.size=64
+2025-04-30 20:55:52,676 - PT4Rec - INFO - num.max.preepoch=20
+2025-04-30 20:55:52,676 - PT4Rec - INFO - num.max.epoch=100
+2025-04-30 20:55:52,676 - PT4Rec - INFO - batch_size=2048
+2025-04-30 20:55:52,676 - PT4Rec - INFO - learnRate=0.001
+2025-04-30 20:55:52,676 - PT4Rec - INFO - reg.lambda=0.0001
+2025-04-30 20:55:52,676 - PT4Rec - INFO - PT4Rec=-n_layer 2  -temp 0.2 -prompt_size 64 -user_prompt_num 3  -pretrain_model XSimGCL
+2025-04-30 20:55:52,676 - PT4Rec - INFO - output.setup=-dir ./results/
+2025-04-30 21:38:37,226 - PT4Rec - INFO - ###Evaluation Results###
+2025-04-30 21:38:37,226 - PT4Rec - INFO - ['Top 5\n', 'Hit Ratio:0.04636\n', 'Precision:0.31381\n', 'Recall:0.1026\n', 'NDCG:0.33668\n', 'Top 20\n', 'Hit Ratio:0.1325\n', 'Precision:0.22424\n', 'Recall:0.25052\n', 'NDCG:0.3171\n']

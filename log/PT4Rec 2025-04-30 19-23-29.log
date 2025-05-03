@@ -1,0 +1,16 @@
+2025-04-30 19:23:32,822 - PT4Rec - INFO - ### model configuration ###
+2025-04-30 19:23:32,822 - PT4Rec - INFO - training.set=./dataset/douban/train.txt
+2025-04-30 19:23:32,822 - PT4Rec - INFO - test.set=./dataset/douban/test.txt
+2025-04-30 19:23:32,822 - PT4Rec - INFO - model.name=PT4Rec
+2025-04-30 19:23:32,823 - PT4Rec - INFO - model.type=graph
+2025-04-30 19:23:32,823 - PT4Rec - INFO - item.ranking=-topN 5,20
+2025-04-30 19:23:32,823 - PT4Rec - INFO - embedding.size=64
+2025-04-30 19:23:32,823 - PT4Rec - INFO - num.max.preepoch=20
+2025-04-30 19:23:32,823 - PT4Rec - INFO - num.max.epoch=100
+2025-04-30 19:23:32,823 - PT4Rec - INFO - batch_size=2048
+2025-04-30 19:23:32,823 - PT4Rec - INFO - learnRate=0.001
+2025-04-30 19:23:32,823 - PT4Rec - INFO - reg.lambda=0.0001
+2025-04-30 19:23:32,823 - PT4Rec - INFO - PT4Rec=-n_layer 2  -temp 0.2 -prompt_size 64 -user_prompt_num 3  -pretrain_model SimGCL
+2025-04-30 19:23:32,823 - PT4Rec - INFO - output.setup=-dir ./results/
+2025-04-30 19:56:51,244 - PT4Rec - INFO - ###Evaluation Results###
+2025-04-30 19:56:51,244 - PT4Rec - INFO - ['Top 5\n', 'Hit Ratio:0.01973\n', 'Precision:0.26313\n', 'Recall:0.03098\n', 'NDCG:0.27868\n', 'Top 20\n', 'Hit Ratio:0.06176\n', 'Precision:0.20589\n', 'Recall:0.08868\n', 'NDCG:0.23911\n']

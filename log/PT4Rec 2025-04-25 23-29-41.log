@@ -1,0 +1,14 @@
+2025-04-25 23:29:43,565 - PT4Rec - INFO - ### model configuration ###
+2025-04-25 23:29:43,565 - PT4Rec - INFO - training.set=./dataset/ml-1M/train.txt
+2025-04-25 23:29:43,566 - PT4Rec - INFO - test.set=./dataset/ml-1M/test.txt
+2025-04-25 23:29:43,566 - PT4Rec - INFO - model.name=PT4Rec
+2025-04-25 23:29:43,566 - PT4Rec - INFO - model.type=graph
+2025-04-25 23:29:43,566 - PT4Rec - INFO - item.ranking=-topN 5,20
+2025-04-25 23:29:43,566 - PT4Rec - INFO - embedding.size=64
+2025-04-25 23:29:43,566 - PT4Rec - INFO - num.max.preepoch=20
+2025-04-25 23:29:43,566 - PT4Rec - INFO - num.max.epoch=100
+2025-04-25 23:29:43,566 - PT4Rec - INFO - batch_size=2048
+2025-04-25 23:29:43,566 - PT4Rec - INFO - learnRate=0.001
+2025-04-25 23:29:43,566 - PT4Rec - INFO - reg.lambda=0.0001
+2025-04-25 23:29:43,566 - PT4Rec - INFO - PT4Rec=-n_layer 2  -temp 0.2 -prompt_size 64 -user_prompt_num 3  -pretrain_model XSimGCL
+2025-04-25 23:29:43,566 - PT4Rec - INFO - output.setup=-dir ./results/

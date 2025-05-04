@@ -14,7 +14,7 @@ from torchnmf.nmf import NMF
 import numpy as np
 from model.graph.XSimGCL import XSimGCL_Encoder
 from model.graph.SimGCL import SimGCL_Encoder
-from model.graph.SELFRec import DNN_Encoder
+
 
 
 
@@ -44,7 +44,7 @@ class DSPT4Rec(GraphRecommender):
         elif self.pretrain_model == 'SimGCL':
             self.model = SimGCL_Encoder(self.data, self.emb_size, eps=0.1, n_layers=3)
 
-        self.model_besides = DNN_Encoder(self.data, self.emb_size, drop_rate=0.1, temperature=temp)
+        
 
         if self.user_prompt_num != 0:         
             self.user_prompt_generator = [Prompts_Generator(self.emb_size, prompt_size).cuda() for _ in range(self.user_prompt_num)]
